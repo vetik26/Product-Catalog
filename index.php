@@ -3,6 +3,7 @@ session_start();
 require_once 'vendor/autoload.php';
 
 use App\Twig;
+use App\Models\Product;
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     $r->addRoute('GET', '/users', 'UsersController@index');

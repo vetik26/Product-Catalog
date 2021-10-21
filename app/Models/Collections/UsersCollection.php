@@ -24,4 +24,8 @@ class UsersCollection
     {
         return $this->users;
     }
+    public function removeUser(User $user): void
+    {
+        unset($this->users[$user->getId()]);
+    }
 }
